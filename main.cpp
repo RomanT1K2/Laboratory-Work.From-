@@ -11,5 +11,12 @@ int main() {
     cout << "Enter two numbers: ";
     cin >> num1 >> num2;
     cout << "YOU ENTER A= " << num1 << " and B= " << num2 << endl;
-    return 0;
+
+    if (choice == 1) {
+        cout << "Result: " << calc.add(num1, num2) << endl;
+    }
+else if (choice == 2) {
+    cout << "Result: " << calc.subtract(num1, num2) << endl;
 }
+         
+    return 0;
