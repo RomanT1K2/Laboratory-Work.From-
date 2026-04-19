@@ -12,8 +12,10 @@ public:
         return result;
     }
 
-    double subtract(double a, double b) {
-        return 0;
+    double add(double a, double b) {
+        cout << "[LOG]: Performing addition of " << a << " and " << b << endl;
+        double result = a + b;
+        return result;
     }
 
     double multiply(double a, double b) {
