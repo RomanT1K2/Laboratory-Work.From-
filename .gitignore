@@ -1,4 +1,7 @@
 
+*.slnx
+*.vcxproj
+*.vcxproj.filters
 
 /.vs
 /лаба_2.3/x64/Debug
