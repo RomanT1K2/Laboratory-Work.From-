@@ -22,12 +22,8 @@ int main() {
 
     cout << "Enter expression (a...b): ";
     cin >> a >> mark >> b;
-    if (b == 0 && mark == '/') {
-        cout << "Error: division by zero\n";
-        return 0;
-	}
-
-    if (mark == '+') {
+ 
+	if (mark == '+') {
         cout << "Result: " << add(a, b);
     }
     else if (mark == '-') {
