@@ -19,10 +19,19 @@ public:
     }
 
     double multiply(double a, double b) {
-        return 0; 
+         cout << "[LOG]: Multiplying " << a << " by " << b << endl;
+    if (a == 0 || b == 0) {
+        cout << "[INFO]: One of the operands is zero, result will be 0" << endl;
+    }
+    return a * b;
     }
 
     double divide(double a, double b) {
-        return 0; 
+       cout << "[LOG]: Attempting to divide " << a << " by " << b << endl;
+    if (b == 0) {
+        cerr << "[ERROR]: Division by zero is undefined!" << endl;
+        return 0;
+    }
+    return a / b;
     }
 };

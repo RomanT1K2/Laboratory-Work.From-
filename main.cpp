@@ -1,4 +1,5 @@
-int main() {
+int main()
+{
     Calculator calc;
     double num1, num2;
     int choice;
@@ -12,11 +13,22 @@ int main() {
     cin >> num1 >> num2;
     cout << "YOU ENTER A= " << num1 << " and B= " << num2 << endl;
 
-    if (choice == 1) {
+    if (choice == 1)
+    {
         cout << "Result: " << calc.add(num1, num2) << endl;
     }
-else if (choice == 2) {
-    cout << "Result: " << calc.subtract(num1, num2) << endl;
-}
-         
+    else if (choice == 2)
+    {
+        cout << "Result: " << calc.subtract(num1, num2) << endl;
+    }
+    else if (choice == 3)
+    {
+        cout << "Result: " << calc.multiply(num1, num2) << endl;
+    }
+    else if (choice == 4)
+    {
+        cout << "Result: " << calc.divide(num1, num2) << endl;
+    }
+
     return 0;
+}
