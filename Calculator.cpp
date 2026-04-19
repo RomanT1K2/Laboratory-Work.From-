@@ -1,4 +1,4 @@
-﻿#include <iostream>
+#include <iostream>
 using namespace std;
 
 double add(double a, double b) {
@@ -8,23 +8,41 @@ double add(double a, double b) {
 double subtract(double a, double b) {
     return a - b;
 }
+double multiply(double a, double b) {
+    return a * b;
+}
+
+double divide(double a, double b) {
+    return a / b;
+}
 
 int main() {
     double a, b;
-    char op;
+    char mark;
 
-    cout << "Enter expression (a + b): ";
-    cin >> a >> op >> b;
+    cout << "Enter expression (a...b): ";
+    cin >> a >> mark >> b;
+    if (b == 0 && mark == '/') {
+        cout << "Error: division by zero\n";
+        return 0;
+	}
 
-    if (op == '+') {
+    if (mark == '+') {
         cout << "Result: " << add(a, b);
     }
-    else if (op == '-') {
+    else if (mark == '-') {
         cout << "Result: " << subtract(a, b);
+    }
+    else if (mark == '*') {
+        cout << "Result: " << multiply(a, b);
+    }
+    else if (mark == '/') {
+        cout << "Result: " << divide(a, b);
     }
     else {
         cout << "Unsupported operation";
     }
 
+    
     return 0;
 }
