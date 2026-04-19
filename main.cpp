@@ -15,9 +15,8 @@ int main() {
     if (choice == 1) {
         cout << "Result: " << calc.add(num1, num2) << endl;
     }
-     else if (choice == 2) {
+else if (choice == 2) {
     cout << "Result: " << calc.subtract(num1, num2) << endl;
-     }
-    
-    return 0;
 }
+         
+    return 0;
