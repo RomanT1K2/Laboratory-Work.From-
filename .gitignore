@@ -8,7 +8,8 @@
 /x64/Debug
 *.user
 *.filters
-
+*.exe
+*.o
 *.gem
 *.rbc
 /.config
