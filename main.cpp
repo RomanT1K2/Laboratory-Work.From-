@@ -7,7 +7,17 @@ int main()
     cout << "=== Welcome to Team Calculator ===" << endl;
     cout << "1. Add\n2. Subtract\n3. Multiply\n4. Divide" << endl;
     cout << "Select operation: ";
-    cin >> choice;
+    
+    cout << "Select operation: ";
+    try {
+        if (!(cin >> choice)) {
+            throw "Input error: not a number!";
+        }
+    }
+    catch (const char* msg) {
+        cout << "Caught exception: " << msg << endl;
+        return 0;
+    } 
 
     cout << "Enter two numbers: ";
     cin >> num1 >> num2;
