@@ -13,7 +13,7 @@ public:
     cout << "[LOG]: Subtracting " << b << " from " << a << endl;
     double result = a - b;
     if (result < 0) {
-        cout << "[WARNING]: Result is negative: " << result << endl;
+        cout << "[WARNING]: Result is negative!: " << result << endl;
     }
     return result;
     }
